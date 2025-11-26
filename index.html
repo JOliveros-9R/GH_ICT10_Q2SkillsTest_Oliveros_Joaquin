@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pyscript.net/releases/2025.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2025.7.3/core.js"></script>
+    <title>School Club Information</title>
+</head>
+<body>
+   <h1>School Club Information</h1> 
+
+   <form>
+    <select id="club_select">
+      <option value="">Choose a Club...</option>
+      <option value="Science">Science Club</option>
+      <option value="Math">Math Club</option>
+      <option value="Basketball">Basketball Varsity Club</option>
+      <option value="Volleyball">Volleyball Varsity Club</option>
+      <option value="Arts">Arts Club</option>
+    </select>
+    <input type="button" value="Collect" py-click="show_Club">
+   </form>
+
+   <div id="Club"></div>
+    <py-script src="main.py"></py-script>
+</body>
+</html>
